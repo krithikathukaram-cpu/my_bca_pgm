@@ -1,9 +1,15 @@
 #include<stdlib.h>
-int main(){
-    int x=5;
+#include<stdio.h>
+
+int main()
+{
     int *p;
-    p=&x;
     p=(int*)malloc(5 *sizeof(int));
-    printf("%d",p[2]);
+
+    *p=10;
+
+    printf("Value=%d", *p);
+
+    free(p);
     return 0;
 }
