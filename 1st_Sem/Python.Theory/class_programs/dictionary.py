@@ -34,11 +34,11 @@ def display_booking(bookings):
     print("\n================ BOOKING DETAILS ================")
     for room, info in bookings.items():
         print(f"Room No: {room}")
-        print(f"  Customer: {info['customer_name']}")
-        print(f"  Contact: {info['contact_no']}")
-        print(f"  Date: {info['date']}")
-        print(f"  Base Amount: ₹{info['booking_amount']:.2f}")
-        print(f"  GST (18%): ₹{info['gst']:.2f}")
+        print(f"Customer: {info['customer_name']}")
+        print(f"Contact: {info['contact_no']}")
+        print(f"Date: {info['date']}")
+        print(f"Base Amount: ₹{info['booking_amount']:.2f}")
+        print(f"GST (18%): ₹{info['gst']:.2f}")
         print("-" * 49)
 
 def get_total_room_price(bookings):
